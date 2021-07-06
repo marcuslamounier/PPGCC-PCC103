@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "normalDistribution.h"
+#include "normalDistributionPdf.h"
 
 using namespace std;
 
