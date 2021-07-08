@@ -7,7 +7,7 @@ double mode(const std::vector<double>& data) {
         return data[0];
     }
     else {
-        vector<double> v = data;
+        std::vector<double> v = data;
         sort(v.begin(), v.end());
         double current = v[0];
         int counter = 1;
