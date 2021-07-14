@@ -1,4 +1,5 @@
 #include <math.h>
+#include <vector>
 #include "functions.h"
 
 double t_distribution_pdf(double x, int v) {
@@ -18,4 +19,8 @@ double t_distribution_cdf(double x1, double x2, int v) {
             ? (t_distribution_cdf(x2, v) - t_distribution_cdf(x1, v))
             : (t_distribution_cdf(x1, v) - t_distribution_cdf(x2, v))
         );
+}
+
+std::pair<double,double> t_distribution_confidence_interval(const std::vector<double>& data, double alpha) {
+
 }
